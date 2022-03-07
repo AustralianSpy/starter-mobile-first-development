@@ -27,3 +27,75 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+.group-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group-s {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.text {
+  padding: 5px;
+}
+
+.img-flex {
+  height: 400px;
+  width: auto;
+}
+
+.big-img {
+  width: 100%;
+}
+
+.brown {
+  background-color: #5c4f41;
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.collage img {
+  width: 45%;
+  margin: 5px;
+}
+
+@media all and (min-width: 800px) {
+  .group-l {
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .group-s {
+    flex-direction: column;
+    width: 32%;
+  }
+  .group-l .text {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .big-img {
+    height: 95%;
+    width: 65%;
+  }
+  .img-flex {
+    height: auto;
+    width: auto;
+  }
+  .collage {
+    flex-wrap: nowrap;
+  }
+  .collage img {
+    width: 22%;
+  }
+}
